@@ -1,0 +1,52 @@
+import java.util.Scanner;
+class student{
+    String Name;
+    String RegNo;
+    String Gender;
+    String DOB;
+    String Class_Section;
+    String Branch;
+    String Place;
+    String PhoneNo;
+    String Mail_ID;
+
+    void Display(){
+        System.out.println("Student Details is:");
+        System.out.println("Studetn Name:" +Name);
+        System.out.println("Registration Number:" +RegNo);
+        System.out.println("Gender:" +Gender);
+        System.out.println("Date of Birth:"+DOB);
+        System.out.println("Class and Section:"+Class_Section);
+        System.out.println("Branch:"+Branch);
+        System.out.println("Place:"+Place);
+        System.out.println("Phone Number:"+PhoneNo);
+        System.out.println("Mail ID:"+Mail_ID);
+    }
+
+}
+public class Lab4 {
+    public static void main(String[] args){
+        student std = new student();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the student Name:");
+        std.Name = sc.next();
+        System.out.println("Enter the student Reg No.:");
+        std.RegNo = sc.next();
+        System.out.println("Enter the student Gender:");
+        std.Gender = sc.next();
+        System.out.println("Enter the student Date of birth:");
+        std.DOB = sc.next();
+        System.out.println("Enter the student Class and Section:");
+        std.Class_Section = sc.next();
+        System.out.println("Enter the student Branch:");
+        std.Branch = sc.next();
+        System.out.println("Enter the student Place:");
+        std.Place = sc.next();
+        System.out.println("Enter the student Phone Number:");
+        std.PhoneNo = sc.next();
+        System.out.println("Enter the student Mail ID:");
+        std.Mail_ID = sc.next();
+
+        std.Display();
+    }
+}
