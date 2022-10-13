@@ -9,6 +9,7 @@ class student{
     String Place;
     String PhoneNo;
     String Mail_ID;
+    String Birth_place;
 
     void Display(){
         System.out.println("Student Details is:");
@@ -21,6 +22,7 @@ class student{
         System.out.println("Place:"+Place);
         System.out.println("Phone Number:"+PhoneNo);
         System.out.println("Mail ID:"+Mail_ID);
+        System.out.println("Birth Place:"+Birth_Place)
     }
 
 }
@@ -46,6 +48,8 @@ public class Lab4 {
         std.PhoneNo = sc.next();
         System.out.println("Enter the student Mail ID:");
         std.Mail_ID = sc.next();
+        System.out.println("Enter the student Birth Place:");
+        std.Birth_Place = sc.next();
 
         std.Display();
     }
